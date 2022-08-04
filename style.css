@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    font-family: Arial;
+}
+html, body{
+    height: 100%;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFB178;
+}
+
+.calc{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    height: 650px;
+    width: 355px;
+    background-color: #243441;
+    border-radius: 20px;
+
+}
+
+.screen{
+    display: grid;
+    justify-content: right;
+    align-self:flex-end;
+    word-break: break-all;
+}
+
+.screen .current-operand{
+font-size: 3.5rem;
+font-weight: 500;
+color: #fff;
+padding-bottom: 20px;
+padding-right: 20px;
+
+}
+
+.screen .previous-operand{
+    color: #54616B;
+    font-weight: 550;
+    /* position: relative;
+    left: 50px; */
+    padding: 20px;
+}
+
+.numpad{
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(4 , 70px);
+    grid-template-rows: repeat(5 , 70px);
+    gap: 15px;
+}
+
+
+.numpad button{
+    border-radius: 20px;
+    background-color: #243441;
+     border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    position: relative;
+    left: 10px;
+    box-shadow: 0px 3px 3px #1e2c39, 0px -2px 2px #2B3B4A;
+     transition: 0.7s;
+
+
+}
+
+.numpad button:last-child {
+    grid-column: 3 / -1 ;
+    background-color: #ffb178;
+    color: #fff;
+}
+
+.numpad button:active{
+    transform: scale(0.7);
+ 
+}
+.numpad .orange{
+    color: #FFB178;
+}
+.numpad .grey{
+    color: #54616B;
+}
+
+img{
+    height: 30px;
+}
+    
